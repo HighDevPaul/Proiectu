@@ -1,4 +1,4 @@
-package ro.ulbs.proiectaresoftware.lab1;
+package ro.ulbs.proiectaresoftware.students;
 
 import java.util.Objects;
 
