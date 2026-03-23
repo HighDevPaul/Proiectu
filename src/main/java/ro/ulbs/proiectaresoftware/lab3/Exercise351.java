@@ -5,7 +5,7 @@ import java.util.*;
 
 public class Exercise351 {
     public  static void main(String[] args) throws IOException{
-        List<String> lines=Files.readAllLines(Path.of("in.txt"));
+        List<String> lines=Files.readAllLines(Path.of("C:\\Users\\Paul\\IdeaProjects\\Proiectu\\src\\main\\java\\ro\\ulbs\\proiectaresoftware\\lab3\\in.txt"));
         //-a)
         System.out.println("A) Linia noua la sfarsit de linie");
         StringBuilder resultA=new StringBuilder();
@@ -29,7 +29,7 @@ public class Exercise351 {
         outContent.append(resultA);
         outContent.append("B) linie noua la sfarsit de linie\n");
         outContent.append( resultB);
-        Files.writeString(Path.of("out.txt"),outContent.toString());
+        Files.writeString(Path.of("C:\\Users\\Paul\\IdeaProjects\\Proiectu\\src\\main\\java\\ro\\ulbs\\proiectaresoftware\\lab3\\out.txt"),outContent.toString());
         System.out.println("\n Speram ca functioneaza ");
 
 
