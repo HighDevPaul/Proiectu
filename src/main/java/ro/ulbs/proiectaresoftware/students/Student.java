@@ -7,7 +7,7 @@ public class Student {
     private String prenume;
     private String nume;
     private String formatieDeStudiu;
-    private float nota;  // ← câmp nou
+    private float nota;
 
     public Student(int numarMatricol, String prenume,
                    String nume, String formatieDeStudiu) {
