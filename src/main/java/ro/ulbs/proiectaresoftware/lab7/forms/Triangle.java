@@ -1,4 +1,4 @@
-package ro.ulbs.proiectare.lab7.forms;
+package ro.ulbs.proiectaresoftware.lab7.forms;
 
 public class Triangle extends Form{
     private float base, height;

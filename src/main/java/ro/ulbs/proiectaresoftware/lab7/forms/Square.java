@@ -1,4 +1,4 @@
-package ro.ulbs.proiectare.lab7.forms;
+package ro.ulbs.proiectaresoftware.lab7.forms;
 
 public class Square  extends Form{
     private float side;

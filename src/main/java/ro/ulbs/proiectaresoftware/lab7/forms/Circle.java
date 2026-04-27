@@ -1,4 +1,4 @@
-package ro.ulbs.proiectare.lab7.forms;
+package ro.ulbs.proiectaresoftware.lab7.forms;
 
 public class Circle extends Form{
     private float radius;

@@ -2,12 +2,16 @@ package ro.ulbs.proiectaresoftware.students;
 
 import java.util.Objects;
 
-public class Student {
-    private int numarMatricol;
-    private String prenume;
-    private String nume;
-    private String formatieDeStudiu;
-    private float nota;
+
+public final class Student {
+
+
+    private final int numarMatricol;
+    private final String prenume;
+    private final String nume;
+    private final String formatieDeStudiu;
+    private final float nota;
+
 
     public Student(int numarMatricol, String prenume,
                    String nume, String formatieDeStudiu) {
@@ -19,6 +23,16 @@ public class Student {
     }
 
 
+    public Student(int numarMatricol, String prenume,
+                   String nume, String formatieDeStudiu, float nota) {
+        this.numarMatricol    = numarMatricol;
+        this.prenume          = prenume;
+        this.nume             = nume;
+        this.formatieDeStudiu = formatieDeStudiu;
+        this.nota             = nota;
+    }
+
+
     public int    getNumarMatricol()    { return numarMatricol; }
     public String getPrenume()          { return prenume; }
     public String getNume()             { return nume; }
@@ -26,10 +40,7 @@ public class Student {
     public float  getNota()             { return nota; }
 
 
-    public void setNota(float nota)     { this.nota = nota; }
-
-
-
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Student)) return false;
@@ -39,13 +50,12 @@ public class Student {
                 && Objects.equals(formatieDeStudiu, s.formatieDeStudiu);
     }
 
-
+    @Override
     public int hashCode() {
         return Objects.hash(prenume, nume, formatieDeStudiu);
     }
 
-    // ── toString cu nota inclusa ──────────────────────────────────────────
-
+    @Override
     public String toString() {
         return String.format("%6d %10s %12s %10s  nota: %.2f",
                 numarMatricol, prenume, nume, formatieDeStudiu, nota);

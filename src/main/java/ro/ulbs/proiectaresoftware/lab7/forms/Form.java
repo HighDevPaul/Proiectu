@@ -1,14 +1,24 @@
-package ro.ulbs.proiectare.lab7.forms;
+package ro.ulbs.proiectaresoftware.lab7.forms;
 
 public class Form {
     private String color;
 
+    //  Camp static —
+    private static int counter = 0;
+
     public Form() {
         color = "white";
+        counter++;
     }
 
     public Form(String color) {
         this.color = color;
+        counter++;
+    }
+
+    //  Getter static
+    public static int getInstanceCount() {
+        return counter;
     }
 
     public float getArea() {
@@ -24,7 +34,8 @@ public class Form {
             Form f = (Form) obj;
             if (this.color == null && f.color == null) {
                 return true;
-            } else if (this.color != null && f.color != null && this.color.compareTo(f.color) == 0) {
+            } else if (this.color != null && f.color != null
+                    && this.color.compareTo(f.color) == 0) {
                 return true;
             }
         }

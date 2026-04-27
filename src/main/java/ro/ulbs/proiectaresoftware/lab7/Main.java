@@ -1,14 +1,15 @@
-package ro.ulbs.proiectare.lab7;
+package ro.ulbs.proiectaresoftware.lab7;
 
-import ro.ulbs.proiectare.lab7.forms.Circle;
-import ro.ulbs.proiectare.lab7.forms.Form;
-import ro.ulbs.proiectare.lab7.forms.Square;
-import ro.ulbs.proiectare.lab7.forms.Triangle;
+import ro.ulbs.proiectaresoftware.lab7.forms.Circle;
+import ro.ulbs.proiectaresoftware.lab7.forms.Form;
+import ro.ulbs.proiectaresoftware.lab7.forms.Square;
+import ro.ulbs.proiectaresoftware.lab7.forms.Triangle;
+import ro.ulbs.proiectaresoftware.lab7.util.PasswordMaker;
 
 public class Main {
     public static void main(String[] args) {
 
-        // 7.6.1. Contor instante
+        // 7.6.1.
         Triangle tri = new Triangle(1.1F, 2.0F, "red");
         Circle c = new Circle(1.5F, "yellow");
         Square sq = new Square(1.2F, "blue");
@@ -17,7 +18,7 @@ public class Main {
         System.out.println("Area = " + sq.getArea() + " details: " + sq);
         System.out.println("Total instance count is " + Form.getInstanceCount());   // sau tri.getInstanceCount() sau sq.getInstanceCount()
 
-        //7.6.2 Password maker singleton
+        //7.6.2
         PasswordMaker pm2 = PasswordMaker.getInstance();
         System.out.println("\n7.6.2 a+b) Generated passwords: ");
         System.out.println("1:" + PasswordMaker.getInstance().getPassword());

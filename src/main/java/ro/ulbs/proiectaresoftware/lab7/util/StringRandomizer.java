@@ -1,4 +1,4 @@
-package ro.ulbs.proiectare.lab7.util;
+package ro.ulbs.proiectaresoftware.lab7.util;
 
 public class StringRandomizer {
     java.util.Random rand = new java.util.Random();
